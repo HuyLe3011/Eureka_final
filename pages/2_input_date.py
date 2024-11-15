@@ -367,5 +367,5 @@ if start_date and end_date and start_date <= end_date and (end_date - start_date
         st.switch_page("Main_app.py")
 else:
     st.warning("Vui lòng chọn khoảng thời gian hợp lệ trước khi tính toán.")
-if st.button("Quay trở lại trang chủ", use_container_width=True,icon="🏠"):
-    st.switch_page("Main_app.py")
+    if st.button("Quay trở lại trang chủ", use_container_width=True,icon="🏠"):
+        st.switch_page("Main_app.py")
