@@ -124,7 +124,8 @@ with col2:
 
 # Ngày hôm nay
 today = datetime.today().date()
-
+if st.button("Quay trở lại trang chủ", use_container_width=True,icon="🏠"):
+    st.switch_page("Main_app.py")
 # Hiển thị khoảng thời gian đã chọn với các điều kiện bổ sung
 if start_date is not None and end_date is not None:
     if end_date > today:
@@ -363,10 +364,6 @@ if start_date and end_date and start_date <= end_date and (end_date - start_date
 
         # Hiển thị biểu đồ trong Streamlit
         st.plotly_chart(fig)
-        back_to_home=st.button("Quay trở lại trang chủ", use_container_width=True,icon="🏠",key='back_to_home)
-        if back_to_home==True:
-            st.switch_page("Main_app.py")
 else:
     st.warning("Vui lòng chọn khoảng thời gian hợp lệ trước khi tính toán.")
-    if st.button("Quay trở lại trang chủ", use_container_width=True,icon="🏠"):
-        st.switch_page("Main_app.py")
+
