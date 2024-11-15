@@ -4,7 +4,7 @@ st.set_page_config(page_title="Ứng dụng học sâu trong phân bổ danh m�
 
 st.title("Ứng dụng học sâu trong phân bổ danh mục đàu tư theo chỉ báo kĩ thuật")
 
-st.write("Chọn phương pháp tải dữ liệu bạn muốn
+st.write("Chọn phương pháp tải dữ liệu bạn muốn")
 
 if st.button("Sử dụng file CSV để đưa dữ liệu", use_container_width=True):
     st.switch_page("1_input-csv.py")
