@@ -133,7 +133,7 @@ if start_date is not None and end_date is not None:
         st.error("Lỗi: Ngày kết thúc phải sau ngày bắt đầu và khoảng thời gian phải đủ dài.")
 
 if start_date and end_date and start_date <= end_date and (end_date - start_date) > timedelta(weeks=4) and end_date < today:
-    if st.button("Bắt đầu tính toán"):
+    if st.button("Nhấn nút để bắt đầu tính toán"):
         st.success("Đang tiến hành giao dịch tự động và phân bổ danh mục đầu tư")
         
         start_date_str = start_date.strftime('%Y-%m-%d')
