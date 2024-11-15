@@ -364,5 +364,5 @@ if start_date and end_date and start_date <= end_date and (end_date - start_date
         # Hiển thị biểu đồ trong Streamlit
         st.plotly_chart(fig)
 else:
-    st.warning("Vui lòng chọn đầy đủ mã cổ phiếu và khoảng thời gian hợp lệ trước khi tính toán.")
+    st.warning("Vui lòng chọn khoảng thời gian hợp lệ trước khi tính toán.")
 
