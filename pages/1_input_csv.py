@@ -116,7 +116,7 @@ class MACrossStrategy(bt.Strategy):
 
 
 # Tải giá đóng cửa và thực hiện chiến thuật Trading SMA
-st.header("📊 Ứng dụng mô hình học sâu để phân bổ danh mục đầu tư dựa trên chỉ báo kĩ thuật SMA")
+st.header("App phân bổ danh mục đầu tư theo chỉ báo kĩ thuật")
 
 prices = st.file_uploader("Chọn file CSV để tải lên", type="csv")
 # Kiểm tra nếu file đã được tải lên
