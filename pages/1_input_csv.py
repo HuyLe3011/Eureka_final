@@ -119,7 +119,7 @@ class MACrossStrategy(bt.Strategy):
 st.header("App phân bổ danh mục đầu tư theo chỉ báo kĩ thuật")
 
 prices = st.file_uploader("Chọn file CSV để tải lên", type="csv")
-if st.button("Quay trở lại trang chủ", use_container_width=True,icon="🏠",key='back_home_before_cal'):
+if st.button("Quay trở lại trang chủ",key='home_button_1',use_container_width=True,icon="🏠"):
     st.switch_page("Main_app.py")
 # Kiểm tra nếu file đã được tải lên
 if prices is not None:
@@ -357,7 +357,7 @@ if prices is not None:
 
         # Hiển thị biểu đồ trong Streamlit
         st.plotly_chart(fig)
-        back_to_home=st.button("Đã tính toán xong, quay trở lại trang chủ ?", use_container_width=True,icon="🏠",key='back_to_home')
+        back_to_home=st.button("Đã tính toán xong, quay trở lại trang chủ ?",key='home_button_1', use_container_width=True,icon="🏠")
         if back_to_home==True:
             st.switch_page("Main_app.py")
 
