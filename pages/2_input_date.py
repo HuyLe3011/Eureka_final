@@ -4,7 +4,7 @@ import random
 import numpy as np
 import tensorflow as tf
 
-seed_value = 30  # Bạn có thể thay đổi seed theo ý muốn
+seed_value = 20  # Bạn có thể thay đổi seed theo ý muốn
 
 os.environ['PYTHONHASHSEED'] = str(seed_value)
 random.seed(seed_value)
