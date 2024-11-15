@@ -105,7 +105,7 @@ class MACrossStrategy(bt.Strategy):
             self.quarterly_returns[self.current_quarter] += profit_pct
             print(f'SELL ALL at the end: {self.data.datetime.date(0)} - Sell price: {self.data.close[0]:.2f}, Profit: {profit_pct:.2%}')
 ##App bắt đầu từ đây
-st.header("Ứng dụng mô hình học sâu để phân bổ danh mục đầu tư dựa trên chỉ báo kĩ thuật SMA")
+st.header("📊 Ứng dụng mô hình học sâu để phân bổ danh mục đầu tư dựa trên chỉ báo kĩ thuật SMA")
 
 list=listing_companies()
 list=list[(list['organTypeCode']=='DN')&(list['comGroupCode']=='HOSE')]
