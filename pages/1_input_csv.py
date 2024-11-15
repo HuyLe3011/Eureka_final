@@ -125,9 +125,9 @@ if prices is not None:
     # Hiển thị dữ liệu trong Streamlit
     st.write("Dữ liệu đã tải lên!")
     st.dataframe(prices,width=1000, height=200,column_order=('ticker','time','open','high','close','volume'),hide_index=True)
-    x=st.button("Bắt đầu tính toán", type="primary")
+    x=st.button("Ấn nút để bắt đầu tính toán", type="primary")
     if x==True:
-        st.write("Đang thực hiện tính toán...")
+        st.success("Đang thực hiện tính toán...")
 
         mcp=prices.ticker.unique()
         R_ma_check=[]
