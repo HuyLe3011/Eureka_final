@@ -12,7 +12,7 @@ st.title("📊 Ứng dụng học sâu trong phân bổ danh mục đầu tư th
 st.write("Chọn phương pháp tải dữ liệu bạn muốn")
 
 if st.button("Sử dụng file CSV", use_container_width=True,icon="📁"):
-    st.switch_page("pages/1_input_csv.py")
+    st.switch_page("csv_app")
 
 if st.button("Lựa chọn khoảng thời gian để tiến hành phân bổ", use_container_width=True,icon="📅"):
-    st.switch_page("pages/2_input_date.py")
+    st.switch_page("date_app")
