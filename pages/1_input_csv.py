@@ -112,7 +112,7 @@ class MACrossStrategy(bt.Strategy):
             self.quarterly_returns[self.current_quarter] += profit_pct
             print(f'SELL ALL at the end: {self.data.datetime.date(0)} - Sell price: {self.data.close[0]:.2f}, Profit: {profit_pct:.2%}')
 
-st.set_page_config(page_title="Ứng dụng học sâu trong phân bổ danh mục đầu tư theo chỉ báo kĩ thuật", page_icon="📊")
+
 # Tải giá đóng cửa và thực hiện chiến thuật Trading SMA
 st.header("📊 Ứng dụng mô hình học sâu để phân bổ danh mục đầu tư dựa trên chỉ báo kĩ thuật SMA")
 
