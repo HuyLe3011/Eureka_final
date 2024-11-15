@@ -363,7 +363,8 @@ if start_date and end_date and start_date <= end_date and (end_date - start_date
 
         # Hiển thị biểu đồ trong Streamlit
         st.plotly_chart(fig)
-        if st.button("Quay trở lại trang chủ", use_container_width=True,icon="🏠"):
+        back_to_home=st.button("Quay trở lại trang chủ", use_container_width=True,icon="🏠")
+        if back_to_home==True:
             st.switch_page("Main_app.py")
 else:
     st.warning("Vui lòng chọn khoảng thời gian hợp lệ trước khi tính toán.")
