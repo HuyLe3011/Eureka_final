@@ -1,8 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title="📊 Ứng dụng học sâu trong phân bổ danh mục đàu tư theo chỉ báo kĩ thuật")
-
-home = st.Page("Main_app.py", title="Trang Chủ", icon=":material/home:")
+home = st.Page("Main_app.py", title="Trang Chủ", icon="📊")
 csv_app = st.Page("pages/1_input_csv.py", title="Nhập file csv", icon="📁")
 date_app = st.Page("pages/2_input_date.py", title="Nhập khoảng thời gian nghiên cứu", icon="📅")
 
