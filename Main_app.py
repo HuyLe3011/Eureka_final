@@ -5,7 +5,8 @@ st.set_page_config(page_title="Ứng dụng LSTM",page_icon="📊")
 st.title("App phân bổ danh mục đầu tư theo chỉ báo kĩ thuật")
 st.write("Chọn phương thức nhập dữ liệu mà bạn muốn")
 
-pg = st.navigation([st.Page("pages/1_input_csv.py",label='Nhập dữ liệu bằng file .csv'), st.Page("pages/2_input_date.py",label="Chọn khoảng thời gian phân bổ")])
+pg = st.navigation([st.Page("pages/1_input_csv.py",title='Nhập dữ liệu bằng file .csv'),
+                    st.Page("pages/2_input_date.py",title="Chọn khoảng thời gian phân bổ")])
 pg.run()
 
 if st.button("Nhập file .csv", use_container_width=True,icon="📁"):
