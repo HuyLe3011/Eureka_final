@@ -32,6 +32,8 @@ import plotly.express as px
 import plotly.graph_objects as go
 
 from datetime import date,datetime, timedelta
+
+st.set_page_config(page_title="Ứng dụng LSTM",page_icon="📊")
 class Basic_MACrossStrategy(bt.Strategy):
     params = dict(ma_short_period=20, ma_long_period=50)
 
