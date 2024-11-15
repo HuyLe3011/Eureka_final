@@ -9,8 +9,8 @@ st.title("Ứng dụng học sâu trong phân bổ danh mục đầu tư theo ch
 
 st.write("Chọn phương pháp tải dữ liệu bạn muốn")
 
-if st.button("Sử dụng file CSV", use_container_width=True,icon=":material/file-csv:"):
+if st.button("Sử dụng file CSV", use_container_width=True,icon="📁"):
     st.switch_page("pages/1_input_csv.py")
 
-if st.button("Lựa chọn khoảng thời gian để tiến hành phân bổ", use_container_width=True,icon=":material/calendar-range:"):
+if st.button("Lựa chọn khoảng thời gian để tiến hành phân bổ", use_container_width=True,icon="📅"):
     st.switch_page("pages/2_input_date.py")
