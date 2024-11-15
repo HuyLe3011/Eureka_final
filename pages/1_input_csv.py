@@ -357,8 +357,5 @@ if prices is not None:
 
         # Hiển thị biểu đồ trong Streamlit
         st.plotly_chart(fig)
-        back_to_home=st.button("Đã tính toán xong, quay trở lại trang chủ ?",key='home_button_1', use_container_width=True,icon="🏠")
-        if back_to_home==True:
-            st.switch_page("Main_app.py")
 
 
