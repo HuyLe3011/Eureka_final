@@ -352,9 +352,6 @@ if prices is not None:
             width=1000,  # Tăng chiều rộng
             height=800,  # Tăng chiều cao
         )
-
-
-
         # Hiển thị biểu đồ trong Streamlit
         st.plotly_chart(fig)
 
