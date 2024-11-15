@@ -6,8 +6,8 @@ st.title("Ứng dụng học sâu trong phân bổ danh mục đàu tư theo ch�
 
 st.write("Chọn phương pháp tải dữ liệu bạn muốn")
 
-import streamlit as st
+if st.button("Đi đến CSV", use_container_width=True):
+    st.switch_page("pages/1_input-csv.py")
 
-st.page_link("Main_app.py", label="Home", icon="🏠")
-st.page_link("pages/1_input_csv.py", label="Page 1", icon="1️⃣")
-st.page_link("pages/2_input_date.py", label="Page 2", icon="2️⃣")
+if st.button("Đi đến Date", use_container_width=True):
+    st.switch_page("pages/2_input-date.py")
