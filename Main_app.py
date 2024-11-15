@@ -7,7 +7,7 @@ st.title("Ứng dụng học sâu trong phân bổ danh mục đàu tư theo ch�
 st.write("Chọn phương pháp tải dữ liệu bạn muốn")
 
 if st.button("Đi đến CSV", use_container_width=True):
-    st.switch_page("pages/1_input-csv.py")
+    st.switch_page("pages/1_input_csv.py")
 
 if st.button("Đi đến Date", use_container_width=True):
-    st.switch_page("pages/2_input-date.py")
+    st.switch_page("pages/2_input_date.py")
