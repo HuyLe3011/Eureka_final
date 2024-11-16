@@ -142,7 +142,7 @@ class MACrossStrategy(bt.Strategy):
 st.header("App phân bổ danh mục đầu tư theo chỉ báo kĩ thuật")
 
 prices = st.file_uploader("Chọn file CSV để tải lên", type="csv")
-if st.button("Quay trở lại trang chủ",key='home_button_1',use_container_width=True,icon="🏠"):
+if st.button("Quay trở lại trang chủ",type='primary',use_container_width=True,icon="🏠"):
     st.switch_page("Main_app.py")
 # Kiểm tra nếu file đã được tải lên
 if prices is not None:
