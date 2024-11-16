@@ -152,7 +152,7 @@ if prices is not None:
     # Hiển thị dữ liệu trong Streamlit
     st.write("Dữ liệu đã tải lên!")
     st.dataframe(prices,width=1000, height=200,column_order=('ticker','time','open','high','close','volume'),hide_index=True)
-    x=st.button("Ấn nút để bắt đầu tính toán", type="primary")
+    x=st.button("Ấn nút để bắt đầu tính toán")
     if x==True:
         st.success("Đang thực hiện tính toán...")
 
