@@ -14,6 +14,14 @@ custom_css = """
         font-weight: bold !important;
         font-size: 20px !important;
         color: #4CAF50 !important;
+        border: 2px solid #4CAF50 !important;
+        border-radius: 5px !important;
+        transition: all 0.3s ease !important;
+    }
+    .stButton > button:hover {
+        background-color: #4CAF50 !important;
+        color: white !important;
+    }
     }
 </style>
 """
