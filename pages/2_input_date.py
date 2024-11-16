@@ -55,7 +55,7 @@ custom_css = """
     .stDateInput > label {
         font-size: 20px !important;
         font-weight: bold !important;
-    }
+        color: #4CAF50 !important;  /* Thay đổi màu sắc */
     }
 </style>
 """
