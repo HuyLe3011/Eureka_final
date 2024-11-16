@@ -141,7 +141,7 @@ class MACrossStrategy(bt.Strategy):
 # Tải giá đóng cửa và thực hiện chiến thuật Trading SMA
 st.header(":blue[App phân bổ danh mục đầu tư theo chỉ báo kĩ thuật]")
 
-prices = st.file_uploader(":blue[Chọn file CSV để tải lên]", type="csv")
+prices = st.file_uploader(":red[Chọn file CSV để tải lên]", type="csv")
 if st.button("Quay trở lại trang chủ",type='primary',use_container_width=True,icon="🏠"):
     st.switch_page("Main_app.py")
 # Kiểm tra nếu file đã được tải lên
