@@ -153,7 +153,7 @@ with col2:
 # Ngày hôm nay
 today = datetime.today().date()
 
-if st.button("Quay trở lại trang chủ", use_container_width=True,icon="🏠"):
+if st.button("Quay trở lại trang chủ",type='primary' ,use_container_width=True,icon="🏠"):
     st.switch_page("Main_app.py")
 # Hiển thị khoảng thời gian đã chọn với các điều kiện bổ sung
 if start_date is not None and end_date is not None:
