@@ -52,6 +52,10 @@ custom_css = """
         background-color: #000000 !important;
         color: white !important;
     }
+    .stDateInput > label {
+        font-size: 20px !important;
+        font-weight: bold !important;
+    }
     }
 </style>
 """
