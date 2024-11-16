@@ -11,8 +11,9 @@ custom_css = """
         font-size: 20px;
     }
     .stButton > button {
-        border: 2px solid #4CAF50 !important;
         font-weight: bold !important;
+        font-size: 20px !important;
+        color: #4CAF50 !important;
     }
 </style>
 """
