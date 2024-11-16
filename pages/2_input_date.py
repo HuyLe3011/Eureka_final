@@ -32,6 +32,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 
 from datetime import date,datetime, timedelta
+import pytz
 
 st.set_page_config(page_title="Ứng dụng LSTM cho danh mục đầu tư",page_icon="📊")
 class Basic_MACrossStrategy(bt.Strategy):
@@ -124,6 +125,11 @@ with col2:
 
 # Ngày hôm nay
 today = datetime.today().date()
+vietnam_tz = pytz.timezone('Asia/Ho_Chi_Minh')
+
+# Lấy ngày giờ hiện tại ở Việt Nam
+today = datetime.now(vietnam_tz)
+
 if st.button("Quay trở lại trang chủ", use_container_width=True,icon="🏠"):
     st.switch_page("Main_app.py")
 # Hiển thị khoảng thời gian đã chọn với các điều kiện bổ sung
