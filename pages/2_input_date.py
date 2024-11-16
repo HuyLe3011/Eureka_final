@@ -135,7 +135,7 @@ class MACrossStrategy(bt.Strategy):
             self.quarterly_returns[self.current_quarter] += profit_pct
             print(f'SELL ALL at the end: {self.data.datetime.date(0)} - Sell price: {self.data.close[0]:.2f}, Profit: {profit_pct:.2%}')
 ##App bắt đầu từ đây
-st.header("App phân bổ danh mục đầu tư theo chỉ báo kĩ thuật")
+st.header(":blue[App phân bổ danh mục đầu tư theo chỉ báo kĩ thuật]")
 
 list=listing_companies()
 list=list[(list['organTypeCode']=='DN')&(list['comGroupCode']=='HOSE')]
@@ -145,10 +145,10 @@ col1, col2 = st.columns(2)
 
 # Hiển thị khoảng thời gian đã chọn
 with col1:
-    start_date = st.date_input("Chọn ngày bắt đầu", value=None)
+    start_date = st.date_input(":red[Chọn ngày bắt đầu]", value=None)
 
 with col2:  
-    end_date = st.date_input("Chọn ngày kết thúc", value=None)
+    end_date = st.date_input(":red[Chọn ngày kết thúc]", value=None)
 
 # Ngày hôm nay
 today = datetime.today().date()
