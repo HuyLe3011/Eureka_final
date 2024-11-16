@@ -125,10 +125,6 @@ with col2:
 
 # Ngày hôm nay
 today = datetime.today().date()
-vietnam_tz = pytz.timezone('Asia/Ho_Chi_Minh')
-
-# Lấy ngày giờ hiện tại ở Việt Nam
-today = datetime.now(vietnam_tz)
 
 if st.button("Quay trở lại trang chủ", use_container_width=True,icon="🏠"):
     st.switch_page("Main_app.py")
