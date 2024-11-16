@@ -7,6 +7,9 @@ st.write(":red[Chọn phương thức nhập dữ liệu mà bạn muốn]")
 
 custom_css = """
 <style>
+    html, body, [class*="css"] {
+        font-size: 20px;
+    }
     .stButton > button {
         border: 2px solid #4CAF50 !important;
         font-weight: bold !important;
