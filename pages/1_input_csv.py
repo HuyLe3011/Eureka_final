@@ -38,6 +38,29 @@ import plotly.express as px
 import plotly.graph_objects as go
 
 st.set_page_config(page_title="Ứng dụng LSTM cho danh mục đầu tư",page_icon="📊")
+custom_css = """
+<style>
+    html, body, [class*="css"] {
+        font-size: 20px;
+    }
+    .stButton > button {
+        font-weight: bold !important;
+        font-size: 20px !important;
+        color: #000000 !important;
+        border: 2px solid #000000 !important;
+        border-radius: 5px !important;
+        transition: all 0.3s ease !important;
+    }
+    .stButton > button:hover {
+        background-color: #000000 !important;
+        color: white !important;
+    }
+    }
+</style>
+"""
+
+# Áp dụng CSS tùy chỉnh
+st.markdown(custom_css, unsafe_allow_html=True)
 
 class Basic_MACrossStrategy(bt.Strategy):
     params = dict(ma_short_period=20, ma_long_period=50)
