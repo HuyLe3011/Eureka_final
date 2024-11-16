@@ -13,13 +13,13 @@ custom_css = """
     .stButton > button {
         font-weight: bold !important;
         font-size: 20px !important;
-        color: #4CAF50 !important;
-        border: 2px solid #4CAF50 !important;
+        color: #000000 !important;
+        border: 2px solid #000000 !important;
         border-radius: 5px !important;
         transition: all 0.3s ease !important;
     }
     .stButton > button:hover {
-        background-color: #4CAF50 !important;
+        background-color: #000000 !important;
         color: white !important;
     }
     }
@@ -29,7 +29,7 @@ custom_css = """
 # Áp dụng CSS tùy chỉnh
 st.markdown(custom_css, unsafe_allow_html=True)
 
-if st.button("Nhập file .csv",type='primary', use_container_width=True,icon="📁"):
+if st.button("Nhập file .csv", use_container_width=True,icon="📁"):
     st.switch_page("pages/1_input_csv.py")
 if st.button("Nhập khoảng thời gian thu thập dữ liệu (chỉ hỗ trợ HOSE)", use_container_width=True,icon="🗓️"):
     st.switch_page("pages/2_input_date.py")
