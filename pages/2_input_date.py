@@ -53,7 +53,7 @@ custom_css = """
         color: white !important;
     }
     .stDateInput > label {
-        font-size: 25px !important;
+        font-size: 100px !important;
         font-weight: bold !important;
         color: #4CAF50 !important;  /* Thay đổi màu sắc */
     }
